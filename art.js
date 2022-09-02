@@ -51,7 +51,8 @@ function createBars() {
     // show peeps
     copy.addEventListener("mouseover", showPeople);
     function showPeople() {
-      document.querySelector("h1").textContent = array[i];
+      document.querySelector("h1").textContent =
+        "the number of customers is " + array[i];
     }
     // grab parent
     const parent = document.querySelector("#bar_chart");
