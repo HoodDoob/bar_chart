@@ -1,0 +1,47 @@
+.wrapper {
+  align-items: flex-end;
+  min-height: 500px;
+}
+#bar_chart {
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+}
+
+.bar {
+  display: block;
+  background-color: blueviolet;
+  border: 2px solid black;
+  width: 20px;
+  align-items: flex-end;
+}
+.movement {
+  position: relative;
+  animation-name: movement;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+@keyframes movement {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  100% {
+    left: 24px;
+    top: 0px;
+  }
+}
+/* .fadeIn {
+  animation-name: fadeOut;
+  animation-duration: 0.4s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+} */
